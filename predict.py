@@ -26,11 +26,12 @@ g16_2 = goesr.L1bBand(file2).open_dataset()#.isel(x=list(range(400,1400)), y=lis
 _, flows = inference.forward(g16_1['Rad'].values, g16_2['Rad'].values)
 
 # Plot results
-fig, axs = plt.subplots(1,2,figsize=(7,4))
+fig, axs = plt.subplots(1,2,figsize=(10,4))
 axs = axs.flatten()
 speed = (flows[0]**2 + flows[1]**2)**0.5
-axs[0].imshow(g16_1['Rad'])
+axs[0].imshow(g16_1['Rad'], vmin=200)
 axs[0].set_title("Input frame 1")
 axs[1].imshow(speed)
 axs[1].set_title("Flow intensity")
+plt.tight_layout()
 plt.savefig("example-flows.png", dpi=200)
