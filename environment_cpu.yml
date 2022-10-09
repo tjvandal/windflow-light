@@ -1,0 +1,26 @@
+name: windflow-light 
+channels:
+  - conda-forge
+  - pytorch
+dependencies:
+  - python=3.9
+  - numpy
+  - pandas
+  - scikit-learn
+  - matplotlib
+  - mpi4py
+  - voila
+  - netcdf4
+  - xarray
+  - dask
+  - scipy
+  - pip
+  - zarr
+  - opencv
+  - pyresample
+  - pyproj
+  - pytorch
+  - torchvision
+  - pip
+  - botocore
+  - boto3
