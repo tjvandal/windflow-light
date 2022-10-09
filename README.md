@@ -2,6 +2,8 @@
 
 Perform optical flow inference on geostationary satellite images from a pretrained RAFT model. 
 
+![windflow example](./example-flows.png)
+
 ## Install
 
 `conda env create -f environment_cpu.yml`
